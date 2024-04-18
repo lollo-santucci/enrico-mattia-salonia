@@ -1,0 +1,26 @@
+/* Footer component style */
+.footer {
+    color: var(--neutral-500);
+    display: flex;
+    height: 40px;
+    padding: 19px 110px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content > p, .footer-content a {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.footer-content > p > a:hover {
+    color: var(--primary-500);
+}

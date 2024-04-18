@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary */
+  --primary-100: #f0f9fc;
+  --primary-300: #4e8ba6;
+  --primary-500: #074058;
+  --primary-700: #063042;
+  --primary-900: #052533;
+
+  /* Accent */
+  --accent-100: #FFEDE5;
+  --accent-300: #F2BAA2;
+  --accent-500: #E59673;
+  --accent-700: #8C482A;
+  --accent-900: #4D1D08;
+
+  /* Neutral */
+  --neutral-100: #FFFEFC;
+  --neutral-300: #B4B2B0;
+  --neutral-500: #888686;
+  --neutral-700: #646464;
+  --neutral-900: #302F2F;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+body {
+  color: var(--primary-500);
+  background: var(--neutral-100);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  padding: 0px 110px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.row {
+  flex-direction: row;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
