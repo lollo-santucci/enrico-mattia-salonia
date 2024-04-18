@@ -1,0 +1,19 @@
+/* Navigation item style */
+.nav-item {
+    color: var(--primary-900);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* Navigation item hover style */
+.nav-item:hover {
+    color: var(--accent-500);
+}
+
+/* Navigation item active style */
+.nav-item.active {
+    color: var(--accent-500);
+    font-weight: 700;
+}

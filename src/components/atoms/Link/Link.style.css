@@ -1,0 +1,10 @@
+/* Link component style */
+
+.link {
+    color: var(--primary-300);
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
