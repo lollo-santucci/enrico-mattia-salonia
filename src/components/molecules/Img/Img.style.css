@@ -1,0 +1,12 @@
+/* Image container component style */
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Image component style */
+.img {
+    border-radius: 8px;
+}
