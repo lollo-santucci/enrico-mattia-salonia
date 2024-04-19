@@ -1,5 +1,5 @@
-import Img from "../components/molecules/Img/Img";
-import Link from "../components/atoms/Link/Link";
+import Img from "@/components/molecules/Img/Img";
+import Link from "@/components/atoms/Link/Link";
 
 export default function Home() {
   return (
