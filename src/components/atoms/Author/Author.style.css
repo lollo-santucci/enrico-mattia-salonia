@@ -1,0 +1,7 @@
+/* Paper Authors component styles */
+
+.co-author {
+    color: var(--primary-300);
+    font-size: 10px;
+    font-weight: 400;
+}

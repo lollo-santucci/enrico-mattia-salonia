@@ -1,0 +1,11 @@
+/* Section Title component style */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 1px solid var(--neutral-300);
+    color: var(--accent-700);
+    font-size: 20px;
+    font-weight: 600;
+}

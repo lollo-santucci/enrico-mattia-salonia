@@ -1,0 +1,16 @@
+/* Card component style */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FFF;
+
+    /* card shadow */
+    box-shadow: 4px 4px 15px 0px rgba(7, 64, 88, 0.07);
+}

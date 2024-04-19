@@ -1,0 +1,10 @@
+/* Page Section component style */
+
+.page-section {
+    display: flex;
+    width: 70vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
