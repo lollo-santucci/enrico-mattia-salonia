@@ -4,7 +4,7 @@
 
 :root {
   /* Primary */
-  --primary-100: #f0f9fc;
+  --primary-100: #C3DBE5;
   --primary-300: #4e8ba6;
   --primary-500: #074058;
   --primary-700: #063042;
@@ -19,7 +19,7 @@
 
   /* Neutral */
   --neutral-100: #FFFEFC;
-  --neutral-300: #B4B2B0;
+  --neutral-300: #CCCAC8;
   --neutral-500: #888686;
   --neutral-700: #646464;
   --neutral-900: #302F2F;
@@ -33,10 +33,11 @@
   }
 }
 
+/* Tag Styles*/
 *{
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: clamp(2px, 100% ,14px);
   font-weight: 300;
 }
 
@@ -48,17 +49,49 @@ body {
   min-height: 100vh;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+/* Class Styles */
 .main {
   display: flex;
   height: 100%;
-  padding: 0px 110px;
-  justify-content: space-between;
+  padding: 50px 110px;
   align-items: center;
   flex: 1;
+  gap: clamp(15px, 2vh, 25px);
 }
 
 .row {
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.col {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.closed {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Icon style */
+.caret-down {
+  background: url('../../public/icons/CaretDown.svg') no-repeat center center;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.caret-up {
+  background: url('../../public/icons/CaretUp.svg') no-repeat center center;
+  height: 20px;
+  width: 20px;
+  display: block;
 }
 
 @layer utilities {
