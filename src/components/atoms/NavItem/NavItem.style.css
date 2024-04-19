@@ -10,6 +10,7 @@
 /* Navigation item hover style */
 .nav-item:hover {
     color: var(--accent-500);
+    text-decoration: none;
 }
 
 /* Navigation item active style */
