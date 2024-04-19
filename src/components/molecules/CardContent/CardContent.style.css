@@ -1,0 +1,8 @@
+/* Card Content component style */
+
+.card-content {
+    display: flex;
+    padding: 10px 0px;
+    flex-direction: column;
+    gap: 15px;
+}
