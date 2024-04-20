@@ -12,10 +12,10 @@ interface CardExtendedProps {
   title: string;
   authors?: string;
   links?: string;
-  abstract: string;
+  children?: React.ReactNode;
 }
 
-const CardExtended: React.FC<CardExtendedProps> = ({title = "Card Title", authors, links, abstract}) => {
+const CardExtended: React.FC<CardExtendedProps> = ({title = "Card Title", authors, links, children}) => {
   // State to track whether the card is open or closed
   const [isOpen, setIsOpen] = useState(false);
   // Function to toggle the open/close state of the card
@@ -28,7 +28,7 @@ const CardExtended: React.FC<CardExtendedProps> = ({title = "Card Title", author
             <IconButton icon={isOpen ? "caret-up" : "caret-down"} onClick={toggleOpen}/>
           </CardHeading>
           <CardContent state={isOpen ? "" : "closed"}>
-            <Abstract content={abstract}/>
+            {children}
           </CardContent>
         </Card>
   );
