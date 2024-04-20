@@ -1,0 +1,12 @@
+/* Simple Text component style */
+
+.simple-text {
+    width: 100%;
+}
+
+.simple-text-content {
+    color: var(--primary-900);
+    text-align: justify;
+    font-size: 12px;
+    font-weight: 400;
+}
