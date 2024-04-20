@@ -5,7 +5,7 @@
 :root {
   /* Primary */
   --primary-100: #C3DBE5;
-  --primary-300: #4e8ba6;
+  --primary-300: #4E8BA6;
   --primary-500: #074058;
   --primary-700: #063042;
   --primary-900: #052533;
@@ -77,6 +77,10 @@ a:hover {
   display: none !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+.justify{
+  text-align: justify;
 }
 
 /* Icon style */
