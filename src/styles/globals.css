@@ -83,6 +83,12 @@ a:hover {
   text-align: justify;
 }
 
+.divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /* Icon style */
 .caret-down {
   background: url('../../public/icons/CaretDown.svg') no-repeat center center;
@@ -93,6 +99,27 @@ a:hover {
 
 .caret-up {
   background: url('../../public/icons/CaretUp.svg') no-repeat center center;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.quote {
+  background: url('../../public/icons/Quote.svg') no-repeat center center;
+  height: 30px;
+  width: 30px;
+  display: block;
+}
+
+.magnifying-glass {
+  background: url('../../public/icons/MagnifyingGlass.svg') no-repeat center center;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.file-pdf {
+  background: url('../../public/icons/FilePdf.svg') no-repeat center center;
   height: 20px;
   width: 20px;
   display: block;
