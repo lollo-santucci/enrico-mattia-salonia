@@ -9,7 +9,7 @@ const Abstract: React.FC<AbstractProps> = ({ content, availability = "upon reque
     return (
         <div className="abstract">
             <h5 className="abstract-title">Abstract</h5>
-            <p className="abstract-content">{content}</p>
+            <p className="abstract-content justify">{content}</p>
             <p className="abstract-availability">[Preliminary draft available {availability}]</p>
         </div>
     );
