@@ -1,0 +1,21 @@
+/* Class component style */
+
+.class {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.class .actions {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.class-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+}

@@ -1,0 +1,25 @@
+/* Warning Panel component style */
+
+.warning-panel {
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: 8px;
+    background: var(--accent-100);
+}
+
+.warning-panel-title {
+    color: var(--accent-900);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.warning-panel-content {
+    color: var(--accent-900);
+    font-size: 12px;
+    font-weight: 400;
+}
