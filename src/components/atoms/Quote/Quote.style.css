@@ -1,0 +1,7 @@
+/* Quote component style */
+
+.quote-content {
+    color: var(--primary-700);
+    font-size: 12px;
+    font-weight: 300;
+}
