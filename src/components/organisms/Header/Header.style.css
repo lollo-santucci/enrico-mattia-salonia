@@ -1,17 +1,35 @@
 /* Header component style */
 .header {
-    display: flex;
-    width: 100%;
-    padding: 19px 110px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 19px 110px;
+  justify-content: space-between;
+  align-items: center;
 
-    border-bottom: 0.1px solid var(--neutral-300);
+  border-bottom: 0.1px solid var(--neutral-300);
+}
+
+.menu-open {
+  z-index: 1000;
+  background: rgba(78, 139, 166, 0.50);
+  position: absolute;
+  width: 100%;
+  height: clamp(900px, 130vh, 950px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-open > .card {
+  width: 40%;
+  align-items: center;
+  padding: 50px 30px;
+  height: fit-content;
+  margin-right: 20px;
 }
 
 /* Style responsive */
 @media (max-width: 800px) {
-    .header {
-      padding: 20px 20px;
-    }
+  .header {
+    padding: 20px 20px;
+  }
 }
