@@ -1,29 +1,43 @@
 import { useState, useEffect } from 'react';
 
+// Define an interface for window dimensions
+interface WindowDimensions {
+    width: number | undefined;
+}
+
 const useWindowDimensions = () => {
-    const hasWindow = typeof window !== 'undefined';
-
-    function getWindowDimensions() {
-        const width = hasWindow ? window.innerWidth : null;
-        return {
-            width
-        };
-    }
-
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+    // State now explicitly starts as an object with width possibly undefined
+    const [windowDimensions, setWindowDimensions] = useState<WindowDimensions>({ width: undefined });
 
     useEffect(() => {
-        if (!hasWindow) {
-            return;
+        // Function to get window dimensions
+        function getWindowDimensions(): WindowDimensions {
+            // Ensure this runs only in the browser
+            if (typeof window !== 'undefined') {
+                return { width: window.innerWidth };
+            }
+            // Fallback in case window is undefined
+            return { width: undefined };
         }
 
+        // Handler to set dimensions
         function handleResize() {
             setWindowDimensions(getWindowDimensions());
         }
 
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, [hasWindow]);
+        // Set dimensions initially and setup event listener
+        if (typeof window !== 'undefined') {
+            setWindowDimensions(getWindowDimensions());
+            window.addEventListener('resize', handleResize);
+        }
+
+        // Cleanup listener on unmount
+        return () => {
+            if (typeof window !== 'undefined') {
+                window.removeEventListener('resize', handleResize);
+            }
+        };
+    }, []);  // Empty dependency array ensures this runs only once after mounting
 
     return windowDimensions;
 };
