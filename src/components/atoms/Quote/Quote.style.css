@@ -2,6 +2,7 @@
 
 .quote-content {
     color: var(--primary-700);
-    font-size: 12px;
     font-weight: 300;
+    margin-bottom: 10px;
+    font-style: italic;
 }

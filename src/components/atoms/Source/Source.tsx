@@ -7,7 +7,7 @@ interface SourceProps {
 const Source: React.FC<SourceProps> = ({ content }) => {
     return (
         <div className="source">
-            <p className="source-content justify">{content}</p>
+            <p className="source-content justify text-s">{content}</p>
         </div>
     );
 };

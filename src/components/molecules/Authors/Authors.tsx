@@ -20,7 +20,7 @@ const Authors: React.FC<AuthorsProps> = ({ authors = "Author, Author", links }) 
       </React.Fragment>
     );
   });
-  return <div className="authors">(with {authorsList})</div>;
+  return <div className="authors text-s">(with {authorsList})</div>;
 
 };
 

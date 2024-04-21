@@ -1,4 +1,4 @@
-import "./QUote.style.css";
+import "./Quote.style.css";
 
 interface QuoteProps {
     content: string;
@@ -7,7 +7,7 @@ interface QuoteProps {
 const Quote: React.FC<QuoteProps> = ({ content }) => {
     return (
         <div>
-            <p className="quote-content justify">{content}</p>
+            <p className="quote-content justify text-m">{content}</p>
         </div>
     );
 };

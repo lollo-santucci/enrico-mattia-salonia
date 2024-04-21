@@ -12,7 +12,7 @@ const Class: React.FC<ClassProps> = ({ title }) => {
                 <IconButton icon="magnifying-glass" />
                 <IconButton icon="file-pdf" />
             </div>
-            <h2 className="class-title">{title}</h2>
+            <h2 className="class-title text-m">{title}</h2>
         </div>
     );
 };

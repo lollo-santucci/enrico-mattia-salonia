@@ -7,7 +7,7 @@ interface TextSimpleProps {
 const TextSimple: React.FC<TextSimpleProps> = ({ content }) => {
     return (
         <div className="simple-text">
-            <p className="simple-text-content justify">{content}</p>
+            <p className="simple-text-content justify text-m">{content}</p>
         </div>
     );
 };

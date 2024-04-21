@@ -6,7 +6,7 @@ interface AuthorProps {
 }
 
 const Author: React.FC<AuthorProps> = ({ author = "Author" , link = "link" }) => {
-    return <a className="co-author" href={link} target="_blank">{author}</a>;
+    return <a className="co-author text-s" href={link} target="_blank">{author}</a>;
 };
 
 export default Author;

@@ -6,7 +6,6 @@
     padding: 19px 110px;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
 }
 
 .footer-content {
@@ -17,10 +16,26 @@
 }
 
 .footer-content > p, .footer-content a {
-    font-size: 10px;
     font-weight: 300;
 }
 
 .footer-content > p > a:hover {
     color: var(--primary-500);
 }
+
+/* Style responsive */
+
+@media (max-width: 800px) {
+    .footer {
+      justify-content: center;
+      flex: 1;
+      padding: 20px 0;
+    }
+
+    .footer-content {
+      flex-direction: column;
+      padding: 0;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }

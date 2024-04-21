@@ -3,11 +3,12 @@ import "./Link.style.css";
 interface LinkProps {
     href?: string;
     text?: string;
+    size?: string;
 }
 
-const Link: React.FC<LinkProps> = ({ href = "link", text = "click here" }) => {
+const Link: React.FC<LinkProps> = ({ href = "link", text = "click here", size = "text-l" }) => {
     return (
-        <a className="link" href={href} target="_blank">{text}</a>
+        <a className={"link "+ size} href={href} target="_blank">{text}</a>
     );
 }
 

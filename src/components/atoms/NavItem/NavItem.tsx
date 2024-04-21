@@ -10,7 +10,7 @@ const NavItem: React.FC<NavItemProps> = ({ active = false, text = "NavItem", hre
     return (
         <a 
         href = {href}
-        className = {`nav-item ${active ? "active" : ""}`}
+        className = {`nav-item text-m ${active ? "active" : ""}`}
         > {text} </a>
     );
 }

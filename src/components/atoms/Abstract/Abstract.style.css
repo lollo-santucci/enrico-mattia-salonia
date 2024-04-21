@@ -7,19 +7,16 @@
 }
 
 .abstract-title {
-    font-size: 10px;
     font-weight: 200;
 }
 
 .abstract-content {
     color: var(--primary-900);
     text-align: justify;
-    font-size: 10px;
     font-weight: 300;
 }
 
 .abstract-availability {
     color: var(--primary-900);
-    font-size: 10px;
     font-weight: 100;
 }

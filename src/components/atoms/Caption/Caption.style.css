@@ -1,6 +1,5 @@
 /* Caption component style */
 .caption {
-    font-size: 12px;
     font-weight: 300;
     color: var(--neutral-500);
 }

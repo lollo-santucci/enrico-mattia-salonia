@@ -11,9 +11,9 @@ interface WarningPanelProps {
 const WarningPanel: React.FC<WarningPanelProps> = ({ title, content, link, linktext }) => {
     return (
         <div className="warning-panel">
-            <h2 className="warning-panel-title">{title}</h2>
-            <p className="warning-panel-content">{content}</p>
-            {link && <Link href={link} text={linktext} />}
+            <h2 className="warning-panel-title text-m">{title}</h2>
+            <p className="warning-panel-content text-m">{content}</p>
+            {link && <Link href={link} text={linktext} size="text-m" />}
         </div>
     );
 };

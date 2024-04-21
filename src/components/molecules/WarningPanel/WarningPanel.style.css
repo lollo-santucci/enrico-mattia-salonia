@@ -14,12 +14,10 @@
 
 .warning-panel-title {
     color: var(--accent-900);
-    font-size: 12px;
     font-weight: 500;
 }
 
 .warning-panel-content {
     color: var(--accent-900);
-    font-size: 12px;
     font-weight: 400;
 }

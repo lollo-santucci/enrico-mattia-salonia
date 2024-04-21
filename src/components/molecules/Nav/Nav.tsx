@@ -5,6 +5,9 @@ import "./Nav.style.css";
 
 const Nav: React.FC = () => {
     const pathname = usePathname();
+    // create a nav item responsive, when the screen is small, the nav item will be hidden and replaced with an hamburger icon thath open a modal with the nav items
+    
+
     return (
         <nav className="nav">
             <NavItem text="Home" href="/" active={pathname === "/"} />

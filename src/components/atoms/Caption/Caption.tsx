@@ -5,7 +5,7 @@ interface CaptionProps {
 }
 
 const Caption: React.FC<CaptionProps> = ({ text = "Caption" }) => {
-  return <p className="caption"> {text} </p>;
+  return <p className="caption text-s"> {text} </p>;
 };
 
 export default Caption;
