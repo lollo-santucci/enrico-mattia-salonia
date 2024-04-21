@@ -145,6 +145,20 @@ a:hover {
   display: block;
 }
 
+.hamburger {
+  background: url('../../public/icons/Hamburger.svg') no-repeat center center;
+  height: 30px;
+  width: 30px;
+  display: block;
+}
+
+.close {
+  background: url('../../public/icons/Close.svg') no-repeat center center;
+  height: 30px;
+  width: 30px;
+  display: block;
+}
+
 /* Style responsive */
 @media (max-width: 800px) {
   .main {

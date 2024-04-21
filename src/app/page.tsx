@@ -1,14 +1,19 @@
+'use client';
 import Img from "@/components/molecules/Img/Img";
 import Link from "@/components/atoms/Link/Link";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 export default function Home() {
+  const { width } = useWindowDimensions();
+  const mainClass = width && width < 800 ? "main col" : "main row";
+  const imgWidth = width && width < 800 ? 300 : 600;
+
   return (
-    <main className="main row">
+    <main className={mainClass}>
       <Img
         src="/img/me.svg"
         alt="Enrico Mattia Salonia in Australia with a Kangaroo"
-        width={533}
-        height={400}
+        width={imgWidth}
         caption="A kangaroo escaping from me talking about game theory"
       />
       <p>
