@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Card from "@/components/atoms/Card/Card";
 import CardTitleExtended from "@/components/molecules/CardTitleExtended/CardTitleExtended";
-import Abstract from "@/components/atoms/Abstract/Abstract";
 import IconButton from "@/components/atoms/IconButton/IconButton";
 import CardHeading from "@/components/molecules/CardHeading/CardHeading";
 import CardContent from "@/components/molecules/CardContent/CardContent";
