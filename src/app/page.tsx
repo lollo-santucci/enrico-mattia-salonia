@@ -17,13 +17,13 @@ export default function Home() {
         caption="A kangaroo escaping from me talking about game theory"
       />
       <p>
-        I am a behavioral economist interested in theory and <br/> experiments. 
+        I am a behavioral economist interested in theory and <br/> experiments.
         <br/><br/>
-        I am a fourth-year PhD student in Economics <br/> at <Link href="" text="Toulouse School of Economics"/>.
+        I am a fourth-year PhD student in Economics <br/> at <Link href="https://www.tse-fr.eu/" text="Toulouse School of Economics"/>.
         <br/><br/>
-        I was also a 2023 Fellow at the <br/><Link href="" text="Global Priorities Institute"/>. 
+        I was also a 2023 Fellow at the <br/><Link href="https://globalprioritiesinstitute.org/" text="Global Priorities Institute"/>.
         <br/><br/>
-        My CV is <Link href="" text="here"/>. 
+        My CV is <Link href="" text="here"/>.
         <br/><br/>
         Feel free to contact me at <br/>
         <Link href="mailto:mattia.salonia@tse.fr" text="mattia.salonia@tse.fr"/> or <br/>
