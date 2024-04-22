@@ -1,0 +1,5 @@
+/* Icon Link component style */
+
+.icon-link:hover {
+  text-decoration: none;
+}

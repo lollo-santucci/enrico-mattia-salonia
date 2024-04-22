@@ -1,16 +1,19 @@
-import IconButton from "@/components/atoms/IconButton/IconButton";
+import IconLink from "@/components/atoms/IconLink/IconLink";
 import "./Class.style.css";
 
 interface ClassProps {
     title: string;
+    linkToDoc?: string;
+    linkToPdf?: string;
 }
 
-const Class: React.FC<ClassProps> = ({ title }) => {
+const Class: React.FC<ClassProps> = ({ title, linkToDoc, linkToPdf }) => {
+
     return (
         <div className="class">
             <div className="actions">
-                <IconButton icon="magnifying-glass" />
-                <IconButton icon="file-pdf" />
+                <IconLink icon="magnifying-glass" link={linkToDoc} target="_self"/>
+                <IconLink icon="file-pdf" link={linkToPdf} />
             </div>
             <h2 className="class-title text-m">{title}</h2>
         </div>
