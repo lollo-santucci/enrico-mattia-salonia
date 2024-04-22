@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 
 // Define an interface for window dimensions
 interface WindowDimensions {
@@ -9,7 +9,7 @@ const useWindowDimensions = () => {
     // State now explicitly starts as an object with width possibly undefined
     const [windowDimensions, setWindowDimensions] = useState<WindowDimensions>({ width: undefined });
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         // Function to get window dimensions
         function getWindowDimensions(): WindowDimensions {
             // Ensure this runs only in the browser
