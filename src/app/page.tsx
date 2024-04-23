@@ -23,7 +23,7 @@ export default function Home() {
         <br/><br/>
         I was also a 2023 Fellow at the <br/><Link href="https://globalprioritiesinstitute.org/" text="Global Priorities Institute"/>.
         <br/><br/>
-        My CV is <Link href="" text="here"/>.
+        My CV is <Link href="/docs/cv.pdf" text="here"/>.
         <br/><br/>
         Feel free to contact me at <br/>
         <Link href="mailto:mattia.salonia@tse.fr" text="mattia.salonia@tse.fr"/> or <br/>
