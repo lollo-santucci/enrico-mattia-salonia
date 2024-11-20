@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap');
+
+/* Contenitore principale */
+.logo-container {
+    font-family: "VT323", monospace;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Stile per la riga del logo */
+.logo-credits {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--primary-300);
+    color: #FAF6F0;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.logo-credits:hover .text {
+    display: none; /* Oppure usa opacity: 0 */
+}
+
+.logo-credits:hover::after {
+    content: "Lorenzo :\\ dev";
+}
+
+/* Blink effetto */
+.blink {
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Crafted by testo */
+.crafted-by {
+    font-size: 1rem;
+    color: var(--primary-300);
+}

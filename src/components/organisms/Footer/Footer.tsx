@@ -1,10 +1,12 @@
 import Image from "next/image";
 import "./Footer.style.css";
+import Credits from "@/components/molecules/Credits/Credits";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer">
-        <section className="footer-content">
+    <footer className="footer flex flex-col md:flex-row justify-start mb-2">
+        <section>  <Credits /> </section>
+        <section className="footer-content hidden">
             <p className="text-xs">Enrico Mattia Salonia</p>
             <p className="text-xs">contacts:&nbsp;
                 <a className="text-xs" href="mailto:mattia.salonia@tse.fr">mattia.salonia@tse.fr</a>,&nbsp;
